@@ -1,0 +1,111 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: quizzical_pitch;
+  text-decoration: none !important;
+}
+
+#document {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: quizzical_pitch;
+  src: url(../fonts/quizzical_pitch.ttf);
+}
+
+h1 {
+  font-size: 100px;
+}
+span {
+  font-size: 25px;
+}
+a{
+  color: white;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 100vh;
+  margin: auto;
+  background-image: url(../images/background.avif);
+  background-size: cover;
+  background-position: 0px -100px;
+  background-repeat: no-repeat;
+}
+
+.question {
+  font-size: 50px;
+}
+#text {
+  /* font-size: 20px; */
+  text-align: center;
+  margin: 10px;
+}
+#cards {
+  display: flex;
+  justify-content: center;
+}
+.card-img-top {
+  height: 200px;
+  width: auto;
+}
+.card {
+  width: 300px;
+  background-color: hsla(0, 100%, 50%, 0.5);
+  border-radius: 50px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: hsla(0, 0%, 100%, 0.5);
+  transform: scale(1.05);
+  transition: all 0.5s linear;
+}
+
+#nextQuestionButton {
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.quiz-container {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.question {
+  font-weight: bold;
+}
+.options {
+  margin-top: 10px;
+}
+.options button {
+  display: block;
+  font-size: 25px;
+  margin: 10px 0;
+  padding: 20px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  cursor: pointer;
+}
+.options button:hover {
+  background-color: #e9e9e9;
+}
+.result {
+  font-size: 60px;
+  color: #28a745;
+}
